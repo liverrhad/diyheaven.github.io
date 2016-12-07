@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="author" content="Columbus Web-Design Team" />
+    <meta name="description" content="A DIY site for cool, fun, and helpful projects." />
+	<meta name="keywords"  content="DIY,project,projects,build" />
+    <title>DIY Heaven</title>
+    
+    <!-- JQUERY -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap-theme.min.css">
+    <script src='dist/bootstrap/js/bootstrap.min.js'></script>
+    
+    <!-- CREATIVE LINKS -->
+    <link rel="stylesheet" href="dist/CreativeLinkEffects/css/component.css">
+    <link rel='stylesheet' href='dist/CreativeLinkEffects/css/normalize.css'>
+    <script type='text/javascript' href='dist/CreativeLinkEffects/js/modernizr.custom.js'></script>
+	
+    <!-- FULLPAGE -->
+    <script type="text/javascript" src="dist/fullPage.js-master/jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/fullPage.js-master/jquery.fullPage.css" />
+	
+    <!-- STYLE PAGES -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+	<script type="text/javascript" src="script.js"></script>
+    
+	<script type="text/javascript">
+        /* fullPage.js Settings */
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+                css3: false,
+                loopBottom: true,
+                scrollingSpeed: 850,
+                controlArrows: false,
+                sectionsColor: ['black', ''],
+                afterRender: function () {
+                    setInterval(function () {
+                        $.fn.fullpage.moveSlideRight();
+                    }, 7000);
+                }
+			});
+		});
+        
+        /* Dropdown Menu Settings */
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown(); 
+        });
+        
+        
+        /* slimScroll Settings */
+        $(function(){
+            $('#content').slimScroll({
+                height: 'auto'
+            });
+        });
+	</script>
+    
+    <style type='text/css'>
+        body {
+            padding: 0;
+            margin: 0;
+            font-weight: 300;
+            overflow: hidden;
+        }
+        
+        a {
+            color: cadetblue;
+            -webkit-transition:.15s;
+        }
+        
+        a:hover {
+            color: steelblue;
+            text-decoration: none;
+        }
+        
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+        
+        ::-mo-scrollBar {
+            display: none;
+        }
+    </style>
+</head>
+    
+<body>
+<div id="fullpage">
+    <div class='menu'>
+        <table align='center'>
+            <tr>
+                <td width='250' class='menutd'>
+                    <div class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Technology <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='tech/techone.html'>Raspberry PI Arcade</a></li>
+                            <li><a href='tech/techtwo.html'>Altoids Charger</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td width='250' class='menutd'>
+                    <div class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Crafts <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='crafts/craftsone.html'>Bottle Cups</a></li>
+                            <li><a href='crafts/craftstwo.html'>Lapel Pins</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td><img src='assets/circle.png' class='circle' /></td>
+                <td width='250' class='menutd'>
+                    <div class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Furniture <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='furniture/furnone.html'>White-Wash Wood</a></li>
+                            <li><a href='furniture/furntwo.html'>Concrete Lego Table</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td width='250' class='menutd'><a href='about.html'>About Us</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class='toptext'>
+        <h1>DIY Heaven</h1>
+        <hr width='800' color='white' style='opacity:.75;padding-top:1px;' />
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; Fun DIY Projects that are out of this world!</p>
+    </div>
+    <div class='bottompoint'>
+        <img src='assets/arrow.png' class='arrow'/>
+    </div>
+	<div class="section" id="section0">
+        <div class="slide" id="slide1" data-anchor="slide1"></div>
+	    <div class="slide" id="slide2" align='center' data-anchor="slide2"></div>
+		<div class="slide" id="slide3" align='center' data-anchor="slide3"></div>
+        <div class="slide" id="slide4" align='center' data-anchor="slide4"></div>
+	</div>
+    
+    <div class="section" id="section1" align='center'>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href='crafts/craftsone.html'><div class="thumbnail">
+                        <img src="assets/bottlz250.jpg">
+                        <p class='textimg'>Cups from Bottles</p>
+                    </div></a><br />
+                    <a href='crafts/craftstwo.html'><div class="thumbnail">
+                        <img src="assets/pinz250.jpg">
+                        <p class='textimg'>Custom Lapel Pins</p>
+                    </div></a>
+                </div>
+                <div class="col-md-4">
+                    <a href='tech/techone.html'><div class="thumbnail">
+                        <img src="assets/pie250.jpg">
+                        <p class='textimg'>Raspberry Pi Arcade</p>
+                    </div></a><br />
+                    <a href='tech/techtwo.html'><div class="thumbnail">
+                        <img src="assets/charger250.jpg">
+                        <p class='textimg'>Altoids Charger</p>
+                    </div></a>
+                </div>
+                <div class="col-md-4">
+                    <a href='furniture/furntwo.html'><div class="thumbnail">
+                        <img src="assets/tabl250.jpg">
+                        <p class='textimg'>Concrete Lego Table</p>
+                    </div></a><br />
+                    <a href='furniture/furnone.html'><div class='thumbnail'>
+                        <img src="assets/woood250.jpg">
+                        <p class='textimg'>White-Wash Wood</p>
+                    </div></a>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

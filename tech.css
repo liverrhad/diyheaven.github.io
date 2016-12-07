@@ -1,0 +1,220 @@
+/* Fonts */
+@font-face {
+	font-family: helvut;
+	src: url(fonts/hn/HelveticaNeue-UltraLight.ttf);
+}
+
+@font-face {
+    font-family: helvt;
+    src: url(fonts/hn/HelveticaNeue-Thin.ttf);
+}
+
+@font-face {
+	font-family: helvuti;
+	src: url(fonts/hn/HelveticaNeue-UltraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: helvti;
+    src: url(fonts/hn/HelveticaNeue-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: helvl;
+    src: url(fonts/hn/HelveticaNeue-Light.ttf);
+}
+
+@font-face {
+    font-family: helv;
+    src: url(fonts/hn/HelveticaNeue.ttf);
+}
+
+@font-face {
+    font-family: pacific;
+    src: url(fonts/pacifico/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: loobster;
+    src: url(fonts/lobster/Lobster.otf);
+}
+
+@font-face {
+    font-family: hipster;
+    src: url(fonts/Hipster/HipsterishFontNormal.ttf);
+}
+
+@font-face {
+    font-family: quicksandl;
+    src: url(fonts/Quicksand/Quicksand-Light.otf);
+}
+
+@font-face {
+    font-family: cookies;
+    src: url(fonts/cookies/Cookie-Dough.otf);
+}
+
+@font-face {
+    font-family: sparklez;
+    src: url(fonts/cartoonspark/sparklez.otf);
+}
+
+@font-face {
+    font-family: cartoon;
+    src: url(fonts/cartoon/cartoon.otf);
+}
+
+@font-face {
+    font-family: donuts;
+    src: url(fonts/PWYummyDonuts.ttf);
+}
+
+@font-face {
+    font-family: marker;
+    src: url(fonts/marker_monkey_fw/MarkerMonkey.ttf);
+}
+
+@font-face {
+    font-family: amazon;
+    src: url(fonts/amazon_palafita/AmazonPalafita.ttf);
+}
+
+
+/* Malnutrition Page */
+#blurred-image-container {
+    display:block;
+    padding:0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+.img-src { 
+    position: fixed;
+    background:url(assets/pie.jpg) center center;
+    background-size: cover;
+    top: -10%;
+    bottom: 10%;
+    left: -10%;
+    right: 10%;
+    width: 110%;
+    height: 115%;
+}
+
+.img-src.blurred-image {
+    opacity:0;
+    -webkit-filter: blur(20px) brightness(0.7);
+    -ms-filter: blur(20px) brightness(0.7);
+    -o-filter: blur(20px) brightness(0.7);
+    filter: blur(20px) brightness(0.7);
+}
+
+.homebutton {
+    height: auto;
+    width: 65px;
+    opacity: .95;
+    -webkit-transition: .5s;
+}
+
+.homebutton:hover {
+    height: auto;
+    width: 65px;
+    opacity: 1;
+    -webkit-transition: .5s;
+}
+
+.menu {
+    position: fixed;
+    z-index: +1000;
+    margin: auto;
+    height: 60px;
+	width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    color: white;
+    background-color: rgba(25,25,25, 1);
+}
+
+.menutd {
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-family: helvt;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.menutd a {
+    color: white;
+    text-decoration:none;
+}
+
+.menutd a:hover {
+    color: white;
+    text-decoration:none;
+}
+
+.pietitle {
+    width: 1000px;
+}
+
+.scrolldown {
+    position: absolute;
+    overflow: hidden;
+    right: -70px;
+    bottom: 0;
+}
+
+.intro {
+    padding-top: 35px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: hipster;
+    font-size: 45px;
+}
+.content_text {
+    padding-top:15px;
+    margin: auto;
+    text-align: left;
+    width: 675px;
+    font-size: 25px;
+    line-height: 55px;
+    font-family: helvt;
+}
+
+.c {
+    border-bottom: 1px solid #666;
+}
+
+.extras {
+    font-size: 30px;
+    padding-top: 15px;
+    font-family: hipster;
+}
+
+.extrastwo {
+    font-size: 30px;
+    padding-top: 15px;
+    font-family: hipster;
+}
+
+.links {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.linkstwo {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}

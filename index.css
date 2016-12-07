@@ -1,0 +1,346 @@
+/* Fonts */
+@font-face {
+	font-family: helvut;
+	src: url(fonts/hn/HelveticaNeue-UltraLight.ttf);
+}
+
+@font-face {
+    font-family: helvt;
+    src: url(fonts/hn/HelveticaNeue-Thin.ttf);
+}
+
+@font-face {
+	font-family: helvuti;
+	src: url(fonts/hn/HelveticaNeue-UltraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: helvti;
+    src: url(fonts/hn/HelveticaNeue-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: helvl;
+    src: url(fonts/hn/HelveticaNeue-Light.ttf);
+}
+
+@font-face {
+    font-family: helv;
+    src: url(fonts/hn/HelveticaNeue.ttf);
+}
+
+@font-face {
+    font-family: pacific;
+    src: url(fonts/pacifico/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: loobster;
+    src: url(fonts/lobster/Lobster.otf);
+}
+
+@font-face {
+    font-family: hipster;
+    src: url(fonts/Hipster/HipsterishFontNormal.ttf);
+}
+
+@font-face {
+    font-family: quicksandl;
+    src: url(fonts/Quicksand/Quicksand-Light.otf);
+}
+
+@font-face {
+    font-family: title;
+    src: url(fonts/basictitlefont.ttf);
+}
+
+@font-face {
+    font-family: cookies;
+    src: url(fonts/cookies/Cookie-Dough.otf);
+}
+
+@font-face {
+    font-family: sparklez;
+    src: url(fonts/cartoonspark/sparklez.otf);
+}
+
+@font-face {
+    font-family: cartoon;
+    src: url(fonts/cartoon/cartoon.otf);
+}
+
+@font-face {
+    font-family: donuts;
+    src: url(fonts/PWYummyDonuts.ttf);
+}
+
+@font-face {
+    font-family: marker;
+    src: url(fonts/marker_monkey_fw/MarkerMonkey.ttf);
+}
+
+@font-face {
+    font-family: amazon;
+    src: url(fonts/amazon_palafita/AmazonPalafita.ttf);
+}
+
+
+/* Home Page */
+.circle {
+    height: auto;
+    width: 215px;
+    margin: auto;
+}
+
+.menu {
+    position: fixed;
+    z-index: +1000;
+    margin: auto;
+    height: 60px;
+	width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    color: white;
+    background-color: rgba(25,25,25, 1);
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(1,1,1, .2);
+}
+
+.menutd {
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-family: helvt;
+    letter-spacing: 5px;
+    font-weight: 500;
+    padding-bottom: 100px;
+}
+
+.menutd a {
+    color: white;
+    text-decoration:none;
+    opacity: .9;
+    -webkit-transition: .5s;
+}
+
+.menutd a:hover {
+    color: white;
+    text-decoration:none;
+    opacity: 1;
+    -webkit-transition: .25s;
+}
+
+.dropdown:hover .dropdown-menu {
+	display:inline-block;
+  -webkit-animation-name: fadein; 
+  -webkit-animation-duration:.2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein {
+   0% {
+      opacity:0;
+   }
+   
+   100% {
+      opacity:1;
+   }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.toptext {
+    top: 30%;
+    left: 3%;
+    margin: auto;
+    z-index: +500;
+    position: absolute;
+}
+
+.toptext h1 {
+    color: white;
+    font-family: pacific;
+    text-align: left;
+    font-size: 125px;
+    text-shadow: 5px 5px 20px rgba(1,1,1, 1);
+    line-height: 5px;
+}
+
+.toptext p {
+    color: white;
+    font-family: quicksandl;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(1,1,1, 1);
+}
+
+.bottompoint {
+    position:absolute;
+    z-index: +700;
+    bottom: 0;
+    right: 24%;
+}
+
+.arrow {
+    width: 650px;
+}
+
+.section0 {
+    background-color: white;
+}
+
+#slide1 {
+    background-image: url(assets/cover.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: inherit;
+    opacity: .9;
+}
+
+#slide2 {
+    background-image: url(assets/pie.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: inherit;
+}
+
+#slide3 {
+    background-image: url(assets/bottlz.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: inherit;
+    opacity: .9;
+}
+
+#slide4 {
+    background-image: url(assets/tabl.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: inherit;
+    opacity: .9;
+}
+
+#section1 {
+    background-image: url(assets/backgroundw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+}
+
+.row {
+    padding-top: 130px;
+    width: 1100px;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 250px;
+    border: none;
+    box-shadow: none;
+}
+
+.thumbnail img {
+    opacity: .9;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    -webkit-transition: .5s;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(55,55,55,.2)
+}
+
+.thumbnail img:hover {
+    opacity: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    -webkit-transition: .25s;
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(55,55,55,.3)
+}
+
+.textimg {
+    font-family: quicksandl;
+    font-size: 20px;
+}
+
+
+/* About Us */
+.gifimg {
+    margin: auto;
+    top: -5px;
+    left: -73px;
+    overflow: hidden;
+    position: fixed;
+    height: auto;
+    opacity: .25;
+    -webkit-transition: .5s;
+}
+
+.gifimg:hover {
+    padding-left: 37px;
+    position: fixed;
+    height: auto;
+    opacity: .30;
+    -webkit-transition: .35s;    
+}
+
+.carrot {
+    width: 180px;
+    height; auto;
+}
+
+.aboutus {
+    padding-top: 100px;
+}
+
+.title-section-5 {
+    font-family: pacific;
+    text-align: center;
+    font-size: 55px;
+    color: rgba(5,5,5);
+    padding-bottom: 15px;
+}
+
+.names {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.names h2 {
+    font-family: helvt;
+    font-size:30px;
+}
+
+.names p {
+    font-family: helvut;
+    font-size: 20px;
+}
+
+.info-bottom {
+    padding-top: 50px;
+    font-family: helvt;
+    font-size 25px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.info-bottom-2 {
+    padding-top: 0;
+    font-family: helvt;
+    font-size 15;
+    text-align: center;
+    padding-bottom: 5000px;
+}

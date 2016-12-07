@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="author" content="Columbus Web-Design Team" />
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1348.17">
+    <title>DIY Heaven - Pi Arcade</title>
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+    <script src='dist/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="dist/CreativeLinkEffects/css/component.css">
+    <link rel='stylesheet' href='dist/CreativeLinkEffects/css/normalize.css'>
+    <script type='text/javascript' href='dist/CreativeLinkEffects/js/modernizr.custom.js'></script>
+    <script type='text/javascript' src='dist/jQuery-slimScroll-1.3.7/jquery.slimscroll.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="dist/fullPage.js-master/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="techone.css" />
+	<script type="text/javascript" src="dist/fullPage.js-master/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+    
+	<script type="text/javascript">
+        /* Fullpage Settings */
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				css3: false,
+                scrollingSpeed: 850,
+                sectionsColor: ['', 'white'],
+                scrollOverflow: true,
+                scrollBar: true
+			});
+		});
+        
+        
+        /* Dropdown Menu Settings */
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown(); 
+        });
+        
+        
+        /* slimScroll Settings */
+        $(function(){
+            $('#content').slimScroll({
+                height: 'auto'
+            });
+        });
+	</script>
+    
+    <style type='text/css'>
+        body {
+            padding: 0;
+            margin: 0;
+            font-weight: 300;
+            overflow: hidden;
+        }
+        
+        a {
+            color: cadetblue;
+            -webkit-transition:.15s;
+        }
+        
+        a:hover {
+            color: steelblue;
+            text-decoration: none;
+        }
+        
+        ::-webkit-scrollBar {
+            display: none;
+        }
+        ::-mo-scrollBar {
+            display: none;
+        }
+    </style>
+</head>
+    
+<body>
+<div id="fullpage">
+    
+    <div class="section " id="section0">
+        <div class="layout-foreground" id='content'>
+            <div id="blurred-image-container">
+                <div class="img-src"></div>
+                <div class="img-src blurred-image"></div>
+            </div>
+    <div class='menu'>
+        <table align='center'>
+            <tr>
+                <td width='250' class='menutd'>
+                    <div class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Technology <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='#'>Raspberry PI Arcade</a></li>
+                            <li><a href='techtwo.html'>Altoids Charger</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td width='250' class='menutd'>
+                    <div class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Crafts <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='../crafts/craftsone.html'>Bottle Cups</a></li>
+                            <li><a href='../crafts/craftstwo.html'>Lapel Pins</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td><a href='../index.html'><img src='assets/homew.png' class='house' /></a></td>
+                <td width='250' class='menutd'>
+                    <div class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                            Furniture <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href='../furniture/furnone.html'>White-Wash Wood</a></li>
+                            <li><a href='../furniture/furntwo.html'>Concrete Lego Table</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td width='250' class='menutd'><a href='../about.html'>About Us</a></td>
+            </tr>
+        </table>
+    </div>
+            <div class='title'>
+                <div class='box'>
+                    <p style='font-size:5px;'>&nbsp;</p>
+                    <p class='title-line'>Pi Arcade</p>
+                    <hr width='500' color='black' align='center' style='opacity: .9;' />
+                    <p class='title-line_2'>Scroll to get building..</p>
+                    <p style='font-size:5px;'>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='section' id='section1'>
+        <p style='font-size:20px;'>&nbsp;</p>
+        <div class='content-holder'>
+            <div class='content'>
+                <h1 class='intro'>Play Donky Kong anywhere you like!</h1>
+                <hr class='ch-ht' width='875' color='black' style='opacity:.15;padding-top:1px;' />
+                <p class='content_text'><strong style='font-size:30px;'>Materials:</strong><br />
+                    <span style='font-size:20px;'>- A Raspberry Pi<br />
+                        - 4GB Micro SD Card<br />
+                        - USB Controllers<br />
+                        - USB Keyboard<br />
+                        - Monitor, HDMI Cables, Power Supply<br />
+                        - Computer to Transfer ROMs<br /><br />
+                    </span>
+                    <strong>Step 1: Download and Install RetroPie on a SD Card<br /></strong>
+                    <span style='font-size:20px;'>
+                        - Download the RetroPie Project SD card image for your version of the Raspberry Pi<br />
+                        - Extract the image to the SD card the same way you normally would<br />
+                        - Put the card into the Raspberry Pi<br /><br />
+                    </span>
+                    <span style='font-size:30px;'>
+                        <strong>Step 2: Boot and Set Up Emulationstation</strong><br />
+                    </span>
+                    <span style='font-size:20px;'>
+Next up we’ll boot up your Raspberry Pi. Plug in one of your controllers and your keyboard to the Raspberry Pi. Insert the SD card you just burned, and turn the Raspberry Pi on. After a couple of minutes of automatic set up (it will expand the file system and prepare some other stuff), it will boot directly into EmulationStation, the interface wrapper with all your emulators on it. Here, you’ll setup your controller and do a few other tweaks to get the system set up.
+On its first boot, follow the onscreen prompts with your controller to set it up (up, down, left, right, etc). When you’re finished, you can navigate through your RetroPie with just your controller. These controls will work in both the emulators and in RetroPie itself. On top of controlling basic movement, you also get a number of “hot keys” so you can quickly do certain actions from inside games:
+Select+Start:​ Exit a game Select+Right Shoulder:​ Save Select+Left Shoulder​: Load Select+Right​: Input State Slot Increase Select+Left​: Input State Slot Decrease Select+X​: RGUI Menu
+Select+B​: Reset
+Not all of these shortcuts are useful for everyone, but you should at least know how to exit a game, create a save, and load a save.
+                        One other thing that’s worth noting, while RetroPie comes packed with a ton of emulators, it hides all the emulators that don’t have games installed. So when you’re first browsing RetroPie, you’ll notice that only a small handful of emulators are available. Don’t worry! This is how it’s supposed to work. The other emulators will show up as you add games<br /><br /></span>
+
+                    <span style='font-size:30px;'>Step 3: Set up WiFi</span><br />
+                    <span style='font-size:20px;'>
+The newest version of RetroPie has a built-in system where you can access all your Raspberry Pi settings, tweak your memory, and more right from EmulationStation. Most of these settings are for advanced users, but one pretty much everyone will want to set up is Wi-Fi:
+- Scroll down to the Configure WiFi option and tap the A button.
+- Select “Connect to WiFi Network” and choose your network. Type in your password and
+                        select okay.<br /><br /></span>
+                    
+                    <span style='font-size:30px;'>Step 4: Transfer Your ROMs</span><br />
+                    <span style='font-size:20px;'>
+For this step, we’re going to assume you already have a bunch of ROMs on your primary computer that you want<br/>
+                    to transfer to your Raspberry Pi.<br/> <i>This is super easy to do:</i><br/>
+- Make sure your Raspberry Pi is on, and connected to your router.<br/>
+- From ​ Windows open up the file manager and type \​ \retropie into the folder location. On
+Mac, open up finder and​ Select Go > Connect to Server. Type in s​ mb://retropie and click connect.<br /><br />
+                    </span>
+                       <span style='font-size:30px;'> There you go!  Now you can play all of your<br /> favorite emulators and go game away!</span> </p>
+
+                    <p>&nbsp;</p><br />
+                </p>
+            </div>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
